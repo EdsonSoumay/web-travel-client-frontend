@@ -32,7 +32,7 @@ export default function Hero(props) {
                     We provide what you need to enjoy your holiday with familiy. Time to make another memorable moments.
                 </p>
                 <Button 
-                    className="btn-px-5" 
+                    className="btn px-5" 
                     hasShadow 
                     isPrimary 
                     onClick={showMostPicked}
