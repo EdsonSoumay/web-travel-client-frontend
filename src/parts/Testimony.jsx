@@ -1,5 +1,5 @@
 import React from "react";
-// import Fade from "react-reveal/Fade";
+import Fade from "react-reveal/Fade";
 
 import TestimonyAccent from "assets/images/testimonial-landingpages-frame.jpg";
 
@@ -8,7 +8,7 @@ import Button from "elements/Button";
 
 export default function Testimony({ data }) {
   return (
-    // <Fade bottom>
+    <Fade bottom>
       <section className="container">
         <div className="row align-items-center">
           <div className="col-auto" style={{ marginRight: 60 }}>
@@ -56,19 +56,6 @@ export default function Testimony({ data }) {
           </div>
         </div>
       </section>
-    // </Fade>
+     </Fade>
   );
 }
-
-
-// import React from 'react'
-// import Star from "elements/Star";
-
-// export default function Testimony() {
-//   return (
-//     <div>
-//       <Star value={2.25} width={35} height={35} spacing={4}> </Star>
-//     </div>
-//   )
-// }
-
