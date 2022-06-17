@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom'
 import propTypes from 'prop-types'
 
 export default function Button(props) {
+
+  console.log("props.href:",props.href);
   const className = [props.className]
   if(props.isPrimary) className.push('btn-primary')
   if (props.isLight) className.push("btn-light");

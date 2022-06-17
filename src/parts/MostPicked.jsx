@@ -1,8 +1,13 @@
 import React from 'react'
 import Button from 'elements/Button'
 import Fade from "react-reveal/Fade";
+import { useHistory } from 'react-router-dom'
+
 
 export default function MostPicked(props) {
+
+ const history = useHistory();
+
   return (
         <section className="container" ref={props.refMostPicked}>
                   <Fade bottom>
@@ -32,6 +37,8 @@ export default function MostPicked(props) {
                                                             <Button 
                                                             type="link" 
                                                             className="stretched-link d-block text-white" 
+                                                            // onClick = {()=>history.push(`/properties/${item._id}`)}
+                                                            // onClick = {history.push(`/properties/${item._id}`)}
                                                             href ={`/properties/${item._id}`}>
                                                                   <h5>{item.name}</h5>
                                                             </Button>
